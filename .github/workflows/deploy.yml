@@ -25,9 +25,6 @@ jobs:
             - name: Install Dependencies
               run: npm install
 
-            - name: Initialize Linter
-              run: npx eslint --init --scope-local --module-type commonjs --framework none --env browser --force
-
             - name: Run Linter
               run: npx eslint app.js
 
